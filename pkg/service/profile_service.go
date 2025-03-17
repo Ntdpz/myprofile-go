@@ -3,23 +3,24 @@ package service
 import (
 	"log"
 	"os"
+	"path/filepath"
 
 	"github.com/joho/godotenv"
 
 	"myprofile-go/pkg/models"
 )
 
-// โหลดไฟล์ .env
 func init() {
-	err := godotenv.Load()
+	envPath := filepath.Join("..", "..", ".env")
+	err := godotenv.Load(envPath)
 	if err != nil {
 		log.Fatal("Error loading .env file")
+	} else {
+		log.Println(".env file loaded successfully")
 	}
 }
 
-// GetProfile function สำหรับดึงข้อมูลโปรไฟล์
 func GetProfile() models.Profile {
-	// ข้อมูลที่ดึงจาก .env
 	personalInformation := models.PersonalInformation{
 		FullName:        os.Getenv("FULL_NAME"),
 		Address:         os.Getenv("ADDRESS"),

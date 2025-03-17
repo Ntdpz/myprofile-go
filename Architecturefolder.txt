@@ -1,4 +1,4 @@
-/my-go-project
+/myprofile-go
 │
 ├── cmd/                      # ไฟล์หลักสำหรับรันแอป
 │   └── app/                  # รันแอปจากที่นี่ (main.go)
@@ -12,6 +12,7 @@
 │
 ├── internal/                 # โค้ดที่ใช้เฉพาะในโปรเจกต์นี้
 │   └── app/                  # ส่วนที่เป็นแอปพลิเคชันหลัก
+│       └── handler/
 │
 ├── migrations/               # การจัดการการอัพเกรดฐานข้อมูล (เช่น schema)
 │
@@ -22,3 +23,4 @@
 ├── go.mod                    # การจัดการ dependencies ของ Go
 ├── go.sum                    # ชุดของ checksum สำหรับ dependencies
 └── README.md                 # ข้อมูลโปรเจกต์
+└── .env
