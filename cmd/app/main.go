@@ -19,6 +19,7 @@ func main() {
 
 	// ตั้งค่า handler
 	http.HandleFunc("/getMe", handler.GetMeHandler)
+	http.HandleFunc("/", handler.StartHandler)
 
 	// รันเซิร์ฟเวอร์
 	log.Fatal(http.ListenAndServe(":8080", corsHandler.Handler(http.DefaultServeMux)))

@@ -50,4 +50,5 @@ type Profile struct {
 	Skills              Skills              `json:"skills"`
 	Projects            []map[string]string `json:"projects"`
 	Languages           []Languages         `json:"languages"`
+	ImageBase64         string              `json:"image_base64"`
 }
