@@ -1,0 +1,14 @@
+# Ignore the .env file
+.env
+
+# Ignore the build directory
+/build
+/bin
+/obj
+
+# Ignore Go test binary files
+*.test
+
+# Ignore IDE files
+.idea/
+.vscode/
