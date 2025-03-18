@@ -6,7 +6,7 @@ import (
 
 	"github.com/rs/cors"
 
-	"myprofile-go/internal/app/handler"
+	"myprofile-go/handler"
 )
 
 func main() {
